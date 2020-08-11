@@ -1,0 +1,141 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap");
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.main-app {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  margin: -2px -2px -2px 0;
+  z-index: 1;
+  padding: 20px 30px;
+  box-shadow: 1px 1px 1px 0.3px #cecece;
+  background-color: white;
+}
+h1 {
+  padding: 0;
+  margin: 0;
+  font-family: "Kalam", cursive;
+  font-size: 34px;
+  letter-spacing: -3px;
+  transition: all 0.25s;
+}
+h1:hover {
+  transform: scale(1.004);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.search-input {
+  width: 70vw;
+  padding: 12px 20px 12px 40px;
+  margin: 40px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+}
+label {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  width: 83.5vw;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+select {
+  border: none;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.product-display {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 10px 60px;
+  padding: 20px;
+  box-shadow: 1px 1px 2px 2px rgb(230, 230, 230);
+  transition: transform 0.2s linear;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+.product-card-name {
+  font-size: 24px;
+  padding: 10px;
+  margin: 0;
+}
+.product-name {
+  margin: 0;
+  font-size: 32px;
+  padding: 5px;
+}
+.price {
+  font-size: 28px;
+  padding: 10px;
+  margin: 0;
+}
+.product-card img {
+  height: 300px;
+  object-fit: contain;
+  object-fit: cover;
+}
+.product-page img {
+  height: 500px;
+  margin: 15px;
+  padding: 10px;
+  object-fit: contain;
+  object-fit: cover;
+}
+.product-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  padding: 20px 0 0;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+
+  width: auto;
+}
+
+@media (max-width: 1024px) {
+  .product-page {
+    flex-direction: column;
+    padding: 120px 0 0;
+  }
+  .product-page img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .product-page {
+    padding: 20px 0 0;
+  }
+}
